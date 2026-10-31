@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IGC Samundri System | Iman Zainab</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💜</text></svg>">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="prog"></div><div class="blobs"><i></i><i></i><i></i></div>
 <nav><div class="wrap"><b>Iman Z.</b>
   <ul><li><a href="index.html">Home</a></li><li><a href="ayla.html">Ayla</a></li><li><a href="index.html#hi">Say hi</a></li></ul>
 </div></nav>
@@ -28,29 +29,13 @@
       <p>Students apna fee status aur attendance khud dekh sakte hain, aur yeh portal seedha app se connected hai. Yahan se system sirf accountant ka tool nahi raha, college ke har student tak pahunchta hai.</p>
     </div>
 
-    <div class="board">
-      <div class="col liveb">
-        <h2 style="font-size:1.4rem">Live</h2>
-        <ul>
-          <li><b>Desktop app</b><small>Fees, vouchers jo print ke baad lock ho jate hain, har payment par automatic timestamp, offline chalta hai aur backup leta hai.</small></li>
-          <li><b>Website with admin panel</b><small>College ki public website, aur admin panel se uska content manage hota hai.</small></li>
-          <li><b>Student portal</b><small>Fee status aur attendance, app se directly connected.</small></li>
-          <li><b>Teacher attendance portal</b><small>Ek jagah se saari classes ki attendance mark hoti hai.</small></li>
-          <li><b>Principal portal</b><small>App mein financial cheezein badalne se pehle principal ki approval.</small></li>
-        </ul>
-      </div>
-      <div class="col planb">
-        <h2 style="font-size:1.4rem">Planned</h2>
-        <ul>
-          <li><b>Examination Department portal</b><small>Alag tests ke marks upload karne ke liye.</small></li>
-          <li><b>Principal read-only view</b><small>Principal accountant ka sab kaam dekh sake, bina kuch badle.</small></li>
-          <li><b>Teacher portals aur unka admin</b><small>Teachers apni attendance, timetable aur classes dekh saken, aur principal bhi unhe dekh sake.</small></li>
-          <li><b>Student uploads</b><small>Students apni picture aur matric ki info khud upload karen, taake board registration ke waqt kaam kam ho.</small></li>
-          <li><b>Dashboard graphs</b><small>Aur zyada graphs aur summaries.</small></li>
-          <li><b>AI-based e-marking tool</b><small>Boards bhi e-marking ki taraf ja rahe hain, isliye iska plan hai.</small></li>
-        </ul>
-      </div>
-    </div>
+    <div class="shot" data-img="igcShot"></div>
+<div class="filters"><button data-f="all" class="on">All</button><button data-f="live">Live</button><button data-f="plan">Planned</button></div>
+<div class="grp"><h3 class="hand">College aur paisa</h3><div class="fg"><article class="f live" data-s="live"><span class="stamp">Live ✔</span><h4>Desktop app</h4><p>Fees, vouchers jo print ke baad lock, automatic timestamp, offline aur backup.</p></article><article class="f live" data-s="live"><span class="stamp">Live ✔</span><h4>Website + admin panel</h4><p>College ki website, aur admin panel se uska content manage.</p></article><article class="f live" data-s="live"><span class="stamp">Live ✔</span><h4>Principal approval</h4><p>Financial changes se pehle principal ki manzoori.</p></article><article class="f plan" data-s="plan"><span class="stamp">Planned ✎</span><h4>Principal read-only view</h4><p>Accountant ka sab kaam dekh sake, bina kuch badle.</p></article><article class="f plan" data-s="plan"><span class="stamp">Planned ✎</span><h4>Dashboard graphs</h4><p>Aur zyada graphs aur summaries.</p></article></div></div>
+<div class="grp"><h3 class="hand">Students</h3><div class="fg"><article class="f live" data-s="live"><span class="stamp">Live ✔</span><h4>Student portal</h4><p>Fee status aur attendance, app se directly connected.</p></article><article class="f plan" data-s="plan"><span class="stamp">Planned ✎</span><h4>Student uploads</h4><p>Apni picture aur matric info khud upload, board registration ke waqt kaam kam.</p></article></div></div>
+<div class="grp"><h3 class="hand">Teachers</h3><div class="fg"><article class="f live" data-s="live"><span class="stamp">Live ✔</span><h4>Attendance portal</h4><p>Ek jagah se saari classes ki attendance mark.</p></article><article class="f plan" data-s="plan"><span class="stamp">Planned ✎</span><h4>Teacher portals + admin</h4><p>Apni attendance, timetable, classes dekh saken; principal bhi dekh sake.</p></article></div></div>
+<div class="grp"><h3 class="hand">Exams aur boards</h3><div class="fg"><article class="f plan" data-s="plan"><span class="stamp">Planned ✎</span><h4>Examination portal</h4><p>Alag tests ke marks upload karne ke liye.</p></article><article class="f plan" data-s="plan"><span class="stamp">Planned ✎</span><h4>AI e-marking tool</h4><p>Boards e-marking ki taraf ja rahe hain, isliye iska plan hai.</p></article></div></div>
+
 
     <div>
       <h2 style="font-size:1.6rem">Design decisions</h2>
