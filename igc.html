@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IGC Samundri System | Iman Zainab</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💜</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="wrap"><b>Iman Z.</b>
+  <ul><li><a href="index.html">Home</a></li><li><a href="ayla.html">Ayla</a></li><li><a href="index.html#hi">Say hi</a></li></ul>
+</div></nav>
+
+<main>
+<section data-ayla="Yeh poora system dekh ke thori der ruko, bohat kuch hai.">
+  <div class="wrap proj">
+    <div>
+      <a class="back" href="index.html">← Back to portfolio</a>
+      <h1 style="font-size:clamp(2rem,5vw,3.2rem);color:var(--deep)">IGC Samundri System</h1>
+      <p class="lead" style="margin-top:.4em">Ek fee app se shuru hua, ab poora college system ban raha hai.</p>
+      <p>Ek accountant, ek Excel sheet, aur entries jo kabhi skip ho jati thin. Wahan se maine fee app banayi, aur phir har naya hissa tab aaya jab college ke kisi aur department ko usi tarah ki problem thi. Yeh project abhi bhi barh raha hai, isliye neeche har cheez ka asli status likha hai.</p>
+    </div>
+
+    <div class="big">
+      <h2 style="font-size:1.5rem">Student portal: bara milestone</h2>
+      <p>Students apna fee status aur attendance khud dekh sakte hain, aur yeh portal seedha app se connected hai. Yahan se system sirf accountant ka tool nahi raha, college ke har student tak pahunchta hai.</p>
+    </div>
+
+    <div class="board">
+      <div class="col liveb">
+        <h2 style="font-size:1.4rem">Live</h2>
+        <ul>
+          <li><b>Desktop app</b><small>Fees, vouchers jo print ke baad lock ho jate hain, har payment par automatic timestamp, offline chalta hai aur backup leta hai.</small></li>
+          <li><b>Website with admin panel</b><small>College ki public website, aur admin panel se uska content manage hota hai.</small></li>
+          <li><b>Student portal</b><small>Fee status aur attendance, app se directly connected.</small></li>
+          <li><b>Teacher attendance portal</b><small>Ek jagah se saari classes ki attendance mark hoti hai.</small></li>
+          <li><b>Principal portal</b><small>App mein financial cheezein badalne se pehle principal ki approval.</small></li>
+        </ul>
+      </div>
+      <div class="col planb">
+        <h2 style="font-size:1.4rem">Planned</h2>
+        <ul>
+          <li><b>Examination Department portal</b><small>Alag tests ke marks upload karne ke liye.</small></li>
+          <li><b>Principal read-only view</b><small>Principal accountant ka sab kaam dekh sake, bina kuch badle.</small></li>
+          <li><b>Teacher portals aur unka admin</b><small>Teachers apni attendance, timetable aur classes dekh saken, aur principal bhi unhe dekh sake.</small></li>
+          <li><b>Student uploads</b><small>Students apni picture aur matric ki info khud upload karen, taake board registration ke waqt kaam kam ho.</small></li>
+          <li><b>Dashboard graphs</b><small>Aur zyada graphs aur summaries.</small></li>
+          <li><b>AI-based e-marking tool</b><small>Boards bhi e-marking ki taraf ja rahe hain, isliye iska plan hai.</small></li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <h2 style="font-size:1.6rem">Design decisions</h2>
+      <div class="decisions">
+        <div><h3>Vouchers lock after print</h3>Chhapne ke baad koi unhe chupke se badal nahi sakta.</div>
+        <div><h3>Manual log, automatic timestamp</h3>Accountant ka kaam wahi rehta hai, bas ghalti ka mauqa kam.</div>
+        <div><h3>Approval before financial changes</h3>Paisay se jura koi badlav principal ki manzoori ke baghair nahi hota.</div>
+        <div><h3>Offline-first, with backup</h3>Bijli ya internet jaaye, kaam nahi rukta.</div>
+      </div>
+      <p class="not">Yeh payment system nahi, management tool hai. Paisa pehle jaise handle hota hai, waise hi hota hai.</p>
+    </div>
+
+    <div>
+      <h2 style="font-size:1.6rem">Demos</h2>
+      <div class="videos">
+        <div><div class="video" data-video="igcApp">App demo coming soon</div><div class="vlabel">Desktop app</div></div>
+        <div><div class="video" data-video="igcWeb">Website demo coming soon</div><div class="vlabel">Website and admin panel</div></div>
+        <div><div class="video" data-video="igcPortal">Portal demo coming soon</div><div class="vlabel">Student portal</div></div>
+      </div>
+    </div>
+
+    <div>
+      <ul class="chips"><li>AI-assisted development</li><li>Requirements and workflow design are mine</li></ul>
+      <p style="margin-top:12px"><span class="status">v1 delivered 2 Nov 2026, still growing</span></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <p style="margin:0 auto">Is tarah ka kuch apne school ya office ke liye chahiye?</p>
+  <div class="btns contact"><a class="btn main" href="index.html#hi">Say hi</a><a class="btn ghost" href="ayla.html">See Ayla</a></div>
+</div></footer>
+
+<div id="ayla" aria-live="polite"><div class="bubble" id="bubble"></div><div class="face" aria-hidden="true">A</div></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

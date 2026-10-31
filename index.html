@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iman Zainab: messy manual workflows into working software</title>
+<meta name="description" content="CS student building AI-assisted systems for real institutions.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💜</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav><div class="wrap">
+  <b>Iman Z.</b>
+  <ul>
+    <li><a href="#igc">IGC system</a></li>
+    <li><a href="#ayla-project">Ayla</a></li>
+    <li><a href="#how">How I work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#log">Build log</a></li>
+    <li><a href="#hi">Say hi</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero" data-ayla="Hi! Main Ayla hun. Scroll karo, Iman ne jo banaya hai woh main dikhati hun.">
+  <div class="wrap">
+    <h1>Hi, I’m Iman. I turn messy manual workflows into working software.</h1>
+    <p class="sub lead">CS student at UCP. I’m building a fee system for a real college, and a desktop app that keeps me on track. AI writes a lot of the code; I decide what’s worth building and how people will actually use it.</p>
+    <div class="btns">
+      <a class="btn main" href="#igc">See what I’ve built</a>
+      <a class="btn ghost" href="#hi">Say hi</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="igc" data-ayla="Yeh slider drag karke dekho!">
+  <div class="wrap proj">
+    <div>
+      <h2>IGC Samundri Fee System</h2>
+      <p class="lead">Ek accountant. Ek Excel sheet. Din mein itne ghante hi hote hain.</p>
+      <p class="problem">Ek college ke accounts office mein sab kuch haath se, Excel mein hota tha. Intern ke taur par maine dekha ke entries kabhi kabhi sirf is liye skip ho jati thin ke din mein waqt kam parta tha. Ghalti accountant ki nahi, system ki thi.</p>
+    </div>
+    <div class="ba" id="ba" aria-label="Before and after comparison">
+      <div class="pane after">
+        <div class="row"><span>Student A · Term fee</span><span class="ok">✔ Paid · 10:42</span></div>
+        <div class="row"><span>Student B · Term fee</span><span class="ok">✔ Paid · 11:05</span></div>
+        <div class="row"><span>Student C · Voucher #0412</span><span class="ok">🔒 Locked after print</span></div>
+        <div class="row"><span>Backup</span><span class="ok">✔ Saved automatically</span></div>
+        <span class="tag">After: clean, timestamped, locked</span>
+      </div>
+      <div class="pane before">
+        <table>
+          <tr><th>Name</th><th>Fee</th><th>Paid</th><th>Date</th></tr>
+          <tr><td>Student A</td><td>12000</td><td class="q">??</td><td></td></tr>
+          <tr><td>Student B</td><td class="x">9500</td><td>9000</td><td>3/10</td></tr>
+          <tr><td>Student C</td><td>12000</td><td></td><td class="q">skipped</td></tr>
+          <tr><td>Student D</td><td>8000</td><td class="x">8000</td><td>?</td></tr>
+        </table>
+        <span class="tag">Before: skipped, edited, untracked</span>
+      </div>
+      <div class="bar"></div>
+      <input type="range" min="0" max="100" value="50" id="slider" aria-label="Drag to compare Excel with the new system">
+    </div>
+    <p>Ek fee app se shuru hua, ab poora college system ban raha hai: website, student portal, teacher attendance, principal approval, aur bahut kuch aane wala hai.</p>
+    <div class="pills"><span class="pill live">Live: app · website · student portal · attendance · principal approval</span><span class="pill plan">Planned: exam portal · AI e-marking · more</span></div>
+    <div><a class="btn main" href="igc.html">Learn more</a></div>
+  </div>
+</section>
+
+<section id="ayla-project" data-ayla="Yeh mujhe Iman ne banaya hai. 😄" style="background:var(--soft)">
+  <div class="wrap proj">
+    <div>
+      <h2>Ayla</h2>
+      <p class="lead">Ek desktop companion jo mere din ko chalati hai, kyunke mujhe willpower par bharosa nahi.</p>
+      <p>Morning briefing, focus tracking, end-of-day review, aur Plus version mein AI goal breakdown aur Google Calendar. Agla qadam: Premium, jahan Ayla mobile par bhi aati hai.</p>
+    </div>
+    <div class="pills"><span class="pill live">Live: Plus version</span><span class="pill plan">Planned: Premium mobile app</span></div>
+    <ul class="chips"><li>Electron</li><li>TypeScript</li><li>Node.js</li></ul>
+    <div><a class="btn main" href="ayla.html">Learn more</a></div>
+  </div>
+</section>
+
+<section id="how" data-ayla="Iman pehle sunti hai, phir banati hai.">
+  <div class="wrap">
+    <h2>How I work</h2>
+    <ol class="steps">
+      <li><h3>Listen first</h3>Main pehle us jagah ke log se baat karti hun jo kaam karte hain. IGC ke liye maine accounts office mein kaam kiya, tab samajh aaya asli problem kya hai.</li>
+      <li><h3>Design around people</h3>Naya system tab chalta hai jab woh log ke kaam karne ke tareeqe mein fit ho, usse ladne ke bajaye. Mera system accountant ka kaam nahi badalta, bas ghalti ka mauqa kam karta hai.</li>
+      <li><h3>Build with AI, own the decisions</h3>AI heavy coding karta hai. Requirements, system design aur kya banana hai, yeh faisle mere hote hain.</li>
+      <li><h3>Protect the data</h3>Fee vouchers print ke baad lock, har payment ka timestamp, aur system offline bhi chalta hai taake bijli ya internet jaane se kaam na ruke.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="about" class="about" data-ayla="Ab thori Iman ki kahani." style="background:var(--soft)">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>Mujhe hamesha se tech ka shoq tha, isi liye medical chhor ke CS choose kiya.</p>
+    <p>College mein internship ke dauran maine itne issues dekhe ke dimaag mein ideas bhar gaye, lekin unhe structure karna nahi aata tha. Phir DBMS ka project bana aur samajh aaya ke ideas ko system kaise banate hain. 4th semester khatam hote hi maine apna project shuru kar diya, aur sabse boring parts bhi mujhe thaka nahi sake. Tab pata chala: mujhe problems ke efficient solutions banana pasand hai.</p>
+    <p>Mujhe student rehne ka shoq hai, aur main hamesha student rehna chahti hun. Free baithna mujhe pagal kar deta hai. Abhi main field ki jargon aur GitHub seekh rahi hun (slow pace par, resources aur online courses se), aur apni personality ki growth ke liye Mavi app se.</p>
+    <p>Mujhe woh problems pasand hain jahan pehle logon ko samajhna parta hai, phir kuch banana.</p>
+  </div>
+</section>
+
+<section id="log" data-ayla="Yahan sab kuch bina polish ke milta hai.">
+  <div class="wrap">
+    <h2>Build log</h2>
+    <p class="lead">Jo main seekh rahi hoon aur bana rahi hoon, bina polish ke.</p>
+    <div class="log">
+      <ul id="posts"><li>Pehli post jald aa rahi hai. Tab tak LinkedIn par follow kar lo.</li></ul>
+      <p style="margin-top:14px"><a class="btn ghost" id="li2" href="https://www.linkedin.com/in/YOUR-LINKEDIN/">Follow on LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="hi" data-ayla="Bye bye! Wapas aana, main yahin hun.">
+  <div class="wrap">
+    <h2>Say hi</h2>
+    <p style="margin:0 auto">Koi problem hai jo manual chal rahi hai? Ya bas hello kehna hai? Dono theek hain.</p>
+    <div class="btns contact">
+      <a class="btn main" href="https://wa.me/92XXXXXXXXXX">WhatsApp</a>
+      <a class="btn ghost" href="mailto:ziman9596@gmail.com">Email</a>
+      <a class="btn ghost" id="li" href="https://www.linkedin.com/in/YOUR-LINKEDIN/">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/YOUR-GITHUB-USERNAME">GitHub</a>
+    </div>
+    <p style="margin:0 auto;font-size:.9rem">© 2026 Iman Zainab</p>
+  </div>
+</footer>
+
+<div id="ayla" aria-live="polite">
+  <div class="bubble" id="bubble"></div>
+  <!-- Ayla ki image ho to <img src="ayla.png" alt="Ayla"> neeche "A" ki jagah laga do -->
+  <div class="face" aria-hidden="true">A</div>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
