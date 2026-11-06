@@ -15,7 +15,7 @@ if("IntersectionObserver" in window){const io=new IntersectionObserver(es=>es.fo
 const prog=document.getElementById("prog"),bl=document.querySelectorAll(".blobs i"),rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
 function sc(){const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;if(prog)prog.style.width=(h>0?y/h*100:0)+"%";if(!rm)bl.forEach((b,i)=>b.style.transform="translateY("+(y*(.08+i*.06))+"px)");}
 addEventListener("scroll",sc,{passive:true});sc();
-document.querySelectorAll("[data-img]").forEach(el=>{const u=IMAGES[el.dataset.img];if(!u){el.remove();return;}el.innerHTML='<div class="dots"><i></i><i></i><i></i></div><img src="'+u+'" alt="Screenshot">';});
+document.querySelectorAll("[data-img]").forEach(el=>{const u=IMAGES[el.dataset.img];if(!u){el.remove();return;}el.innerHTML=el.dataset.img==='me'?'<img src="'+u+'" alt="Iman">':'<div class="dots"><i></i><i></i><i></i></div><img src="'+u+'" alt="Screenshot">';});
 const fs=document.querySelectorAll(".f");
 if("IntersectionObserver" in window&&!rm){const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");o.unobserve(e.target)}}),{threshold:.15});fs.forEach((f,i)=>{f.classList.add("rv");f.style.transitionDelay=(i%3)*80+"ms";o.observe(f)});}
 document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("click",()=>{
