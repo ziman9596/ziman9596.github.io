@@ -22,3 +22,5 @@ document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("clic
   document.querySelectorAll(".filters button").forEach(x=>x.classList.toggle("on",x===b));
   const k=b.dataset.f;fs.forEach(f=>f.hidden=!(k==="all"||f.dataset.s===k));
   document.querySelectorAll(".grp").forEach(g=>g.hidden=![...g.querySelectorAll(".f")].some(f=>!f.hidden));}));
+
+document.querySelectorAll("[data-pimg]").forEach(el=>{const u=IMAGES[el.dataset.pimg];if(u)el.innerHTML='<img src="'+u+'" alt="Portal preview">';});
