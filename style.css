@@ -201,3 +201,6 @@ p{max-width:70ch}
 .pvimg img{width:100%;height:100%;object-fit:cover;object-position:top}
 .pv h4{font-family:var(--head);font-size:1.05rem;margin-bottom:4px}
 .pv p{font-size:.95rem;color:var(--muted)}
+
+.pvg{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.pv .video{margin-bottom:12px}
