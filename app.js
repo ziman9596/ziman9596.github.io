@@ -1,6 +1,13 @@
+function toEmbed(u){
+  u=(u||"").trim();
+  const m=u.match(/src=["']([^"']+)["']/); if(m) u=m[1];
+  let y=u.match(/(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/|live\/)|youtu\.be\/)([\w-]{6,})/);
+  if(y) return "https://www.youtube.com/embed/"+y[1];
+  return u.replace(/(drive\.google\.com\/file\/d\/[^/]+)\/view.*/,"$1/preview");
+}
 document.querySelectorAll("[data-video]").forEach(el=>{
-  const u=VIDEOS[el.dataset.video]; if(!u) return;
-  el.innerHTML=/\.(mp4|webm)$/i.test(u)?'<video controls playsinline preload="metadata" src="'+u+'"></video>':'<iframe src="'+u+'" allowfullscreen loading="lazy" title="Demo video"></iframe>';
+  const u=toEmbed(VIDEOS[el.dataset.video]); if(!u) return;
+  el.innerHTML=/\.(mp4|webm)$/i.test(u)?'<video controls playsinline preload="metadata" src="'+u+'"></video>':'<iframe src="'+u+'" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; picture-in-picture" title="Demo video"></iframe>';
   el.style.border="0";
 });
 const pl=document.getElementById("posts");
@@ -24,3 +31,6 @@ document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("clic
   document.querySelectorAll(".grp").forEach(g=>g.hidden=![...g.querySelectorAll(".f")].some(f=>!f.hidden));}));
 
 document.querySelectorAll("[data-pimg]").forEach(el=>{const u=IMAGES[el.dataset.pimg];if(u)el.innerHTML='<img src="'+u+'" alt="Portal preview">';});
+
+const fc=document.querySelector("#ayla .face");
+if(fc&&IMAGES.aylaFace) fc.innerHTML='<img src="'+IMAGES.aylaFace+'" alt="Ayla">';
