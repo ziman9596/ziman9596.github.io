@@ -10,4 +10,4 @@ const VIDEOS = {
 /* LinkedIn posts jab hon: {title:"Post title", url:"https://www.linkedin.com/posts/..."} */
 const POSTS = [];
 /* Images: path ya link (jaise "images/me.jpg"). Khali ho to woh jagah nazar nahi aati. aylaFace = Ayla ke gol circle ki pic */
-const IMAGES = { aylaFace:"images/greeting.png", me:"images/me.png", igcShot:"images/logo.jpeg" };
+const IMAGES = { aylaFace:"images/greeting.png", me:"images/me.png", igcShot:"" };
