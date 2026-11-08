@@ -5,7 +5,7 @@ const VIDEOS = {
   igcPortal:"",
   teacherPortal:"https://www.youtube.com/embed/ht18EMzxS1Y?si=TRMw2AsXMV8tpwNj",
   principalPortal:"https://www.youtube.com/embed/XZT-BFTp5a8?si=qSwcFMGFyv3TDMje",
-  ayla:""
+  ayla:"https://www.youtube.com/embed/3LML0fZ4L5w?si=1X7CEO4B2z3V1Neb"
 };
 /* LinkedIn posts jab hon: {title:"Post title", url:"https://www.linkedin.com/posts/..."} */
 const POSTS = [];
